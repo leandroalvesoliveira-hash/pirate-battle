@@ -1,0 +1,144 @@
+.game-over-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(3, 15, 25, 0.75);
+}
+
+.game-over-panel {
+  width: 480px;
+  max-width: 94%;
+  min-height: 390px;
+  box-sizing: border-box;
+  padding: 45px 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #fff4d7;
+
+  background-image: url("/assets/png/default/ui/menu/panel_menu.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game-over-panel h1 {
+  margin: 0 0 12px;
+  font-size: 29px;
+  color: #ffd478;
+  text-shadow: 2px 3px 2px #000;
+}
+
+.game-over-score {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffd478;
+  text-shadow: 3px 4px 3px #000;
+}
+
+.game-over-panel p {
+  margin: 5px 0 22px;
+  font-size: 14px;
+  color: #e8e0cc;
+}
+
+/* Botão com sprite */
+.game-over-panel button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 260px;
+  max-width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  padding: 0 15px;
+
+  background-color: transparent;
+  background-image: url("/assets/png/default/ui/menu/button_primary_normal.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  border-radius: 0;
+
+  color: #fff4d7;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px #000;
+
+  cursor: pointer;
+  transition: filter 0.1s ease;
+}
+
+.game-over-panel button:hover {
+  background-image: url("/assets/png/default/ui/menu/button_primary_hover.png");
+  transform: none;
+  filter: none;
+}
+
+.game-over-panel button:active {
+  background-image: url("/assets/png/default/ui/menu/button_primary_pressed.png");
+  transform: none;
+  filter: none;
+}
+
+.game-over-panel button:focus-visible {
+  outline: 3px solid #ffd478;
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .game-over-panel {
+    padding: 35px 40px;
+  }
+
+  .game-over-panel h1 {
+    font-size: 23px;
+  }
+
+  .game-over-panel button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.captain-name-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ffd478;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.captain-name-input {
+  width: 260px;
+  max-width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+
+  background: #102638;
+  border: 2px solid #b88332;
+  border-radius: 6px;
+
+  color: #fff4d7;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+}
+
+.captain-name-input:focus {
+  border-color: #ffd478;
+}
